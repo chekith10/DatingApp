@@ -1,0 +1,9 @@
+.invalid-feedback {
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+}
+.is-invalid {
+    border-color: white
+  
+}
