@@ -1,0 +1,56 @@
+/* photo-management.component.css */
+
+.photo-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    
+  }
+  
+  .photo-img {
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    margin-bottom: 10px;
+  }
+  
+  .photo-info {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .photo-buttons {
+    display:flex;
+    justify-content: center;
+  }
+  
+  /* Optional: Style the buttons */
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .approve-button {
+    background-color: rgb(7, 197, 7);
+    border-radius: 5px;
+
+  }
+  .reject-button {
+    background-color: rgb(255, 55, 0);
+    border-radius: 5px;
+  }

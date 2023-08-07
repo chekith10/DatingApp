@@ -1,5 +1,6 @@
 <div class="row mb-3" *ngIf="member">
     <div class="col-2" *ngFor="let photo of member.photos">
+        <div class="photo-container" [class.unapproved] = "!photo.isApproved">
         <img src="{{photo.url}}" alt="photo of user" class="img-thumbnail mb-1">
         <div class="text-center">
             <button 
@@ -13,8 +14,12 @@
             [disabled]="photo.isMain"
             (click)="deletePhoto(photo.id)"
             ><i class="fa fa-trash"></i></button>
+            <div class="approval-text" *ngIf="!photo.isApproved">
+            <span>Awaiting Approval</span>
+        </div>
         </div>
     </div>
+</div>
 </div>
 <div class="row">
  

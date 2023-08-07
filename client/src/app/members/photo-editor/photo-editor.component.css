@@ -6,3 +6,21 @@
 input[type=file] {
     color: transparent;
 }
+
+.photo-container {
+    position: relative;
+  }
+  
+  .photo-container.unapproved img {
+    opacity: 0.5;
+  }
+  
+  .approval-text {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-weight: bold;
+  }
